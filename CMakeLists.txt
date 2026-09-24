@@ -14,8 +14,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # dependencies so sampapi and this target use the same runtime as well.
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
-include(cmake/dependencies.cmake)
-
+include(cmake/dependencies.cmake )
+  
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(PluginSDK REQUIRED COMPONENTS gtasa)
 
